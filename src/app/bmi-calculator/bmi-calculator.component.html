@@ -1,0 +1,17 @@
+<div class="bmi-calculator">
+    <h2>BMI Calculator</h2>
+    <div class="background-image" [style.background-image]="'url(./assets/pexels.jpg)'"></div>
+    <div>
+      <label for="weight">Weight (kg):</label>
+      <input id="weight" [(ngModel)]="weight" type="number" />
+    </div>
+    <div>
+      <label for="height">Height (cm):</label>
+      <input id="height" [(ngModel)]="height" type="number" />
+    </div>
+    <button (click)="calculateBMI()">Calculate</button>
+    <div *ngIf="bmi">
+      <p>Your BMI is {{ bmi.toFixed(1) }}</p>
+    </div>
+  </div>
+  

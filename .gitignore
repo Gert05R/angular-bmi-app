@@ -40,3 +40,19 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# node_modules directory
+node_modules/
+
+# built files
+dist/
+
+# IDE-specific files
+.idea/
+
+# log files
+*.log
+
+# environment variables
+*.env
+
